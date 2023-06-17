@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML DOM TREE: Q1-A</title>
+        <script>
+            const init=()=> {
+                const obj = document.getElementById("tag2");
+                const result =document.getElementById("tag3");
+            result.value = obj.previousElementSibling.firstElementChild.tagName;
+                    };
+        </script>
+    </head>
+    <body onload="init()">
+    <p  style="color: blue" id="tag1"> This is
+        <span style="color : red"> a sentence.</span>
+    </p>
+    <form id="tag2">
+        <input type="text" id="tag3" />
+        <input type="button" value="Test" id="tag4"/>
+        <hr />
+    </form>
+</body>
+</html>
